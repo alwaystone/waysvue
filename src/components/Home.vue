@@ -2,7 +2,7 @@
 	<el-row class="container">
 		<el-col :span="24" class="header">
 			<el-col :span="20" class="logo">
-				<span>动态路由{{nodes.length}}</span>
+				<span>动态路由{{nodes.length}}aa</span>
 			</el-col>
 		</el-col>
 
