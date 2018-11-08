@@ -5,6 +5,7 @@ import Home from '@/components/Home'
 import Index from '@/components/Index'
 import NotFound from '@/components/NotFound'
 import Main from '@/components/Main'
+import UserManager from '@/components/userManager/UserManager'
 
 Vue.use(Router)
 

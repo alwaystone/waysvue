@@ -45,6 +45,8 @@
       },
       login(data){
         window.sessionStorage.setItem('user',JSON.stringify(data))
+        console.log(data)
+        console.log("============================================================")
         MenuUtils(routers,data)
       },
       handleSubmit2(ev) {
@@ -103,7 +105,7 @@
 		      "children":[
 		        {
 		          "path":"menuTwoone",
-		          "component":"Main",
+		          "component":"userManager/UserManager" ,
 		          "leaf":true,
 		          "name":"导航2--1级菜单1"
 		        },

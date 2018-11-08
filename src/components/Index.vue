@@ -28,7 +28,6 @@ const Home2 = { template: '<div>Home2</div>' }
 		methods:{
 			
 			initialization(){
-				console.log("===============================") ;
 				var routers = [
 					{
 					   	path:'/',
