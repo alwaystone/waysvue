@@ -29,11 +29,9 @@
         rules2: {
           account: [
             { required: true, message: '请输入账号', trigger: 'blur' },
-            //{ validator: validaePass }
           ],
           checkPass: [
             { required: true, message: '请输入密码', trigger: 'blur' },
-            //{ validator: validaePass2 }
           ]
         },
         checked: true
@@ -45,8 +43,6 @@
       },
       login(data){
         window.sessionStorage.setItem('user',JSON.stringify(data))
-        console.log(data)
-        console.log("============================================================")
         MenuUtils(routers,data)
       },
       handleSubmit2(ev) {
@@ -62,31 +58,31 @@
 		      "children":[
 		        {
 		          "path":"menuOneone",
-		          "component":"Main",
+		          "component":"temp/Main",
 		          "name":"导航1--1级菜单1",
 		          "leaf":false,
 		          "children":[
 		            {
 		              "path":"menuOneoneone",
-		              "component":"Main",
+		              "component":"temp/Main",
 		              "name":"导航1--2级菜单1",
 		              "leaf":true
 		            },
 		            {
 		              "path":"menuOneonetwo",
-		              "component":"Main",
+		              "component":"temp/Main",
 		              "name":"导航1--2级菜单2",
 		              "leaf":false,
 		              "children":[
 		                {
 		                  "path":"menuOneonetwoone",
-		                  "component":"Main",
+		                  "component":"temp/Main",
 		                  "leaf":true,
 		                  "name":"导航1--3级菜单1"
 		                },
 		                {
 		                  "path":"menuOneonetwotwo",
-		                  "component":"Main",
+		                  "component":"temp/Main",
 		                  "leaf":true,
 		                  "name":"导航1--3级菜单2"
 		                }
@@ -111,7 +107,7 @@
 		        },
 		        {
 		          "path":"menuTwotwo",
-		          "component":"Main",
+		          "component":"temp/Main",
 		          "leaf":true,
 		          "hidden":true,
 		          "name":"导航2--1级菜单2"
@@ -129,7 +125,7 @@
 		}
         this.login(data.menus)
         this.$router.addRoutes(routers)
-        this.$router.push({ path: '/main' });
+        this.$router.push({ path: '/home' });
       }
     }
   }

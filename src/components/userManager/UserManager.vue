@@ -1,5 +1,14 @@
 <template>
-  <div >  
+  <div >
+	<el-tabs tab-position="left" style="height: 500px;">
+    <el-tab-pane label="用户管理">用户管理</el-tab-pane>
+    <el-tab-pane label="配置管理">配置管理</el-tab-pane>
+    <el-tab-pane label="角色管理">角色管理</el-tab-pane>
+    <el-tab-pane label="定时任务补偿">定时任务补偿</el-tab-pane>
+	</el-tabs>
+  	
+  	
+  	
   <el-badge :value="200" :max="99" class="item">
 	<el-button size="small">评论</el-button>
   </el-badge>
@@ -54,7 +63,23 @@
   </el-table>
   </div>
 </template>
+<style>
+	
+.el-tabs__item {
+	padding: 0 40px;
+	height: 60px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 60px;
+	display: inline-block;
+	list-style: none;
+	font-size: 28px;
+	font-weight: 500;
+	color: #303133;
+	position: relative
+}
 
+</style>
 <script>
   export default {
     methods: {
