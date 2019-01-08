@@ -57,38 +57,15 @@
 		      "leaf":false,
 		      "children":[
 		        {
-		          "path":"menuOneone",
-		          "component":"temp/Main",
+		          "path":"branch",
+		          "component":"moduleLevel/branchLevel/Branch",
 		          "name":"导航1--1级菜单1",
-		          "leaf":false,
-		          "children":[
-		            {
-		              "path":"menuOneoneone",
-		              "component":"temp/Main",
-		              "name":"导航1--2级菜单1",
-		              "leaf":true
-		            },
-		            {
-		              "path":"menuOneonetwo",
-		              "component":"temp/Main",
-		              "name":"导航1--2级菜单2",
-		              "leaf":false,
-		              "children":[
-		                {
-		                  "path":"menuOneonetwoone",
-		                  "component":"temp/Main",
-		                  "leaf":true,
-		                  "name":"导航1--3级菜单1"
-		                },
-		                {
-		                  "path":"menuOneonetwotwo",
-		                  "component":"temp/Main",
-		                  "leaf":true,
-		                  "name":"导航1--3级菜单2"
-		                }
-		              ]
-		            }
-		          ]
+		          "leaf":true
+		        },{
+		          "path":"secondBranch",
+		          "component":"moduleLevel/secondBranch/SecondBranch",
+		          "name":"操作测试",
+		          "leaf":true
 		        }
 		      ]
 		    },
@@ -109,7 +86,6 @@
 		          "path":"menuTwotwo",
 		          "component":"temp/Main",
 		          "leaf":true,
-		          "hidden":true,
 		          "name":"导航2--1级菜单2"
 		        }
 		      ]

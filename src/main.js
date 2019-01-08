@@ -14,6 +14,10 @@ import Lockr from 'lockr' ;
 import StringUtil from './utils/stringUtil'
 import MenuUtils from '@/utils/MenuUtils'
 import _Global from './global/Global'
+import BaseTable from '@/base/BaseTable'
+import BaseRender from '@/base/BaseRender'
+import BaseDropDown from '@/base/BaseDropDown'
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI, { locale }) ;
