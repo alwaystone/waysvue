@@ -5,6 +5,7 @@
 	            :data="tableData"
 	            border
 	            stripe
+	            height=20
 	            style="width: 100%;text-align:center"
 	            :header-cell-style="headerStyle">
 	            <el-table-column

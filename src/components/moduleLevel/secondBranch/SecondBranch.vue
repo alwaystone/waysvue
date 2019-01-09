@@ -34,8 +34,8 @@ export default {
 		            const oprationData = {
 		              label: "操作",
 		              items: [
-		                { label: "修改", func: { func: "update", uuid: param.row.uuid } },
-		                { label: "删除", func: { func: "del", uuid: param.row.uuid } }
+		                { label: "修改", func: { func: "update", uuid: param.row.uuid } }/*,
+		                { label: "删除", func: { func: "del", uuid: param.row.uuid } }*/
 		              ]
 		            };
 		            // 触发MyDropDown的update和del事件
